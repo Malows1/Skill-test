@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #3371b4, #478BD2);
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+img{
+ margin-left: 10px;
+  margin-top: 10px;
+    width: 250px;
+    margin-right: 300px;
+}
+header {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+ 
+
+}
+nav {
+
+    position: sticky;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0; 
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+    padding: 8px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+.nav-links a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px; 
+    background-color: #e4e4e4; 
+    transition: width 0.3s ease; /* Animate the width */
+}
+
+.nav-links a:hover::after {
+    width: 100%; /* Expands the underline on hover */
+}
+@keyframes up-down {
+    0%, 100% {
+        transform: translateY(0); /* Starting position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up by 10px */ 
+    }
+}
+
+.light-image {
+    margin-top: 50px;
+    width: 450px; /* Adjust size as needed */
+    height: auto;
+        
+    float: right; /* Float the image to the right */
+    animation: up-down 2s ease-in-out infinite; /* Apply animation */
+}
+.headline{
+   margin-top: 200px; 
+   padding-left: 200px;
+   color: #e4e4e4;
+   font-size: 100px;
+   line-height: 1.1; 
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700 ;
+}
+.main-title {
+   font-size: 120px ;
+}
+.nobold{
+    font-weight: 100;
+    font-size: 80;
+    padding-left: 10px;
+    
+}
+.highlight{
+    color: #eb6b30; 
+    font-weight: bold;
+}
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+
+.animate {
+    animation: fadeIn 1s ease-in-out forwards; 
+}
+
+
+.light-container,
+.headline {
+    opacity: 0; 
+}
+
+.underline-text {
+    color: transparent; 
+    font-size: 14px;
+    text-decoration: line-through; 
+    text-decoration-color: #ffffff; 
+    text-decoration-thickness: 3px;
+   
+   
+}
+.scroll{
+    font-size: 20px;
+    line-height: 1.1; 
+    font-family: 'Poppins', sans-serif;
+}
+.scrollnav{
+    margin-top: 40px;
+}
+.home{
+    padding: 100px 20px; /* Padding for the section */
+    background-color: linear-gradient(to right, #3371b4, #478BD2);
+ 
+}
+
+/*section*/
+.section {
+    padding: 60px 20px; /* Padding for the section */
+    background-color: #f9f9f9; /* Light background color for contrast */
+
+}
+.abouttext{
+    padding-left: 50%;
+    line-height: 1.5;
+    margin-top: 180px;
+  
+}
+.welcome{
+    font-size: 27px; 
+    background: linear-gradient(to right, #3371b4, #478BD2); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    display: inline-block;  
+    font-weight: 500;
+    Padding-left: 2%;
+}
+.meeting{
+    border-radius: 8px;
+    margin-top: -400px;
+    width: 900px;
+}
+.about{
+    Padding-left: -1%;
+    font-family: 'Poppins', sans-serif;
+    color: #272727;
+    font-weight: 900;
+    font-size: 100px;
+}
+.US
+{
+    Padding-left: 4%;
+    color: #474747;
+    font-weight: 500;
+    font-size: 20px;
+}
